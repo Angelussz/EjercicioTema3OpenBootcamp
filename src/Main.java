@@ -2,11 +2,27 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        int valor1 = 12;
+        int valor2 = 10;
+        int valor3 = 33;
+        Coche MiCoche = new Coche();
+        MiCoche.IncrementarPuertas();
+        MiCoche.IncrementarPuertas();
+        MiCoche.IncrementarPuertas();
+        MiCoche.IncrementarPuertas();
+        System.out.println(suma(valor1,valor2,valor3));
+        System.out.println(MiCoche.NumeroPuertas);
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        System.out.println("Hola github");
     }
+    public static int suma(int valor1,int valor2,int valor3){
+        return  valor1+valor2+valor3;
+    }
+}
+
+class Coche{
+    int NumeroPuertas;
+    public void IncrementarPuertas(){
+        this.NumeroPuertas++;
+    }
+
 }
