@@ -20,7 +20,7 @@ public class Main {
 }
 
 class Coche{
-    public int NumeroPuertas;
+    public int NumeroPuertas=0;
     public void IncrementarPuertas(){
         this.NumeroPuertas++;
     }
